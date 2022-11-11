@@ -4,6 +4,6 @@ tasks:
 
 ports:
   - name: Website
-    port: 8000
+    port: 9000
     onOpen: open-browser
     visibility: public
