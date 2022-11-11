@@ -6,3 +6,4 @@ ports:
   - name: Website
     port: 9000
     onOpen: open-browser
+    visibility: public
