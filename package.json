@@ -39,7 +39,7 @@
     "dev": "nodemon --watch src -e ts --exec npm run dev:start",
     "semantic-release": "semantic-release",
     "postinstall": "npm run typings",
-    "typings": "typings install",
+    "typings": "typings install"
   },
   "dependencies": {
     "cors": "^2.8.5",
