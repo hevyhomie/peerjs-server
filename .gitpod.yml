@@ -1,6 +1,6 @@
 tasks:
   - init: npm i
-    command: npm start
+    command: npm dev:start
 
 ports:
   - port: 9000
