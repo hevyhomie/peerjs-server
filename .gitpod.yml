@@ -3,5 +3,6 @@ tasks:
     command: npm dev:start
 
 ports:
-  - port: 443
+  - name: Website
+    port: 9000
     onOpen: open-browser
