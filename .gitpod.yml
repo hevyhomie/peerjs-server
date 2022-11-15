@@ -5,5 +5,5 @@ tasks:
 ports:
   - name: Website
     port: 9000
-    onOpen: open-preview
+    onOpen: open-browser
     visibility: public
