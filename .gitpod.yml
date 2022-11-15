@@ -1,6 +1,6 @@
 tasks:
   - init: npm i -g
-    command: npm run dev
+    command: npm run dev:start
 
 ports:
   - name: Website
