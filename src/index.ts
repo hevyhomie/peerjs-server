@@ -1,6 +1,7 @@
 import express from "express";
 import http from "http";
 import https from "https";
+import cors from "cors";
 import { Server } from "net";
 
 import defaultConfig, { IConfig } from "./config";
@@ -12,6 +13,8 @@ type Optional<T> = {
 
 function ExpressPeerServer(server: Server, options?: IConfig) {
   const app = express();
+
+  app.use(cors()); 
 
   const newOptions: IConfig = {
     ...defaultConfig,
