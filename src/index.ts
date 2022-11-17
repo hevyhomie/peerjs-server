@@ -14,7 +14,7 @@ type Optional<T> = {
 function ExpressPeerServer(server: Server, options?: IConfig) {
   const app = express();
 
-  app.use(cors()); 
+  // app.use(cors()); 
 
   const newOptions: IConfig = {
     ...defaultConfig,
@@ -40,7 +40,7 @@ function ExpressPeerServer(server: Server, options?: IConfig) {
 function PeerServer(options: Optional<IConfig> = {}, callback?: (server: Server) => void) {
   const app = express();
 
-  app.use(cors()); 
+  // app.use(cors()); 
 
   let newOptions: IConfig = {
     ...defaultConfig,
