@@ -40,6 +40,8 @@ function ExpressPeerServer(server: Server, options?: IConfig) {
 function PeerServer(options: Optional<IConfig> = {}, callback?: (server: Server) => void) {
   const app = express();
 
+  app.use(cors()); 
+
   let newOptions: IConfig = {
     ...defaultConfig,
     ...options
