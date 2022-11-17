@@ -17,9 +17,9 @@ export const Api = ({ config, realm }: {
   //   next();
   // });
   
-  app.use(cors({ origin: 'https://9000-hevyhomie-peerjsserver-yeprtstt9sy.ws-us74.gitpod.io' }));
+  // app.use(cors({ origin: 'https://9000-hevyhomie-peerjsserver-yeprtstt9sy.ws-us74.gitpod.io' }));
 
-  // app.options('*', cors()); 
+  app.options('*', cors()); 
 
   app.get("/", (_, res) => {
     res.send(publicContent);
