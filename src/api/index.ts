@@ -19,15 +19,15 @@ export const Api = ({ config, realm }: {
   
   // app.use(cors({ origin: 'https://9000-hevyhomie-peerjsserver-yeprtstt9sy.ws-us74.gitpod.io' }));
 
-  // app.use(cors());
+  app.use(cors());
 
   // app.options('*', cors()); 
 
-  app.all('/*', function(_req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    next();
-  });
+  // app.all('/*', function(_req, res, next) {
+  //   res.header("Access-Control-Allow-Origin", "*");
+  //   res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  //   next();
+  // });
   
 
   app.get("/", (_, res) => {
