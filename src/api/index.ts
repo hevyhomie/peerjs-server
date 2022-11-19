@@ -28,12 +28,12 @@ export const Api = ({ config, realm }: {
   //   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   //   next();
   // });
-  app.all('/*', function (_req, res, next) {
-    res.header("Access-Control-Allow-Origin", "http://localhost:8080");
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header("Access-Control-Allow-Headers", "X-Requested-With,     Content-Type");
-    next();
-  });
+  // app.all('/*', function (_req, res, next) {
+  //   res.header("Access-Control-Allow-Origin", "http://localhost:8080");
+  //   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  //   res.header("Access-Control-Allow-Headers", "X-Requested-With,     Content-Type");
+  //   next();
+  // });
 
   app.get("/", (_, res) => {
     res.header("Access-Control-Allow-Origin", "*");
