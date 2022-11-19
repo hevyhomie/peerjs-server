@@ -33,7 +33,7 @@ export const Api = ({ config, realm }: {
   // });
 
   app.use(cors());
-  // app.options('*', cors()); 
+  app.options('*', cors()); 
 
   // app.all('/*', function(_req, res, next) {
   //   res.header("Access-Control-Allow-Origin", "*");
