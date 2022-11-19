@@ -32,9 +32,13 @@ export const Api = ({ config, realm }: {
   //   next();
   // });
 
-  app.use(cors());
-  app.options('*', cors()); 
-
+  // app.use(cors());
+  // app.options('*', cors()); 
+    app.use(function(_req, res, next) {
+      res.header("Access-Control-Allow-Origin", "*");
+      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+      next();
+    });
   // app.all('/*', function(_req, res, next) {
   //   res.header("Access-Control-Allow-Origin", "*");
   //   res.header("Access-Control-Allow-Headers", "X-Requested-With");
