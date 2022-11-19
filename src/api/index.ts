@@ -18,8 +18,14 @@ export const Api = ({ config, realm }: {
   // });
   
   // app.use(cors({ origin: 'https://9000-hevyhomie-peerjsserver-yeprtstt9sy.ws-us74.gitpod.io' }));
-
-  app.use(cors());
+  const corsOptions ={
+    origin:'*', 
+    // credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200,
+  }
+ 
+  app.use(cors(corsOptions))
+  // app.use(cors());
 
   // app.options('*', cors()); 
 
