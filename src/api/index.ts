@@ -32,12 +32,15 @@ export const Api = ({ config, realm }: {
   //   next();
   // });
 
-  var corsOptions = {
-    origin: '*',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
-  }
+  // var corsOptions = {
+  //   origin: '*',
+  //   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
+  // }
 
-  app.use(cors(corsOptions));
+  // app.use(cors({credentials: true, origin: true, exposedHeaders: '*'}));
+  app.use(cors());
+  
+  
   // app.options('*', cors()); 
     // app.use(cors({origin: ['http://localhost:5173', 'http://127.0.0.1:5173']}));
   // app.all('/*', function(_req, res, next) {
