@@ -38,9 +38,9 @@ export const Api = ({ config, realm }: {
   // }
 
   // app.use(cors({credentials: true, origin: true, exposedHeaders: '*'}));
-  // app.use(cors());
+    app.use(cors());
   
-  app.options('*', cors());
+  // app.options('*', cors());
   // app.options('*', cors()); 
     // app.use(cors({origin: ['http://localhost:5173', 'http://127.0.0.1:5173']}));
   // app.all('/*', function(_req, res, next) {
