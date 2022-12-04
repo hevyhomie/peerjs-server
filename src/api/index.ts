@@ -42,7 +42,7 @@ export const Api = ({ config, realm }: {
   
   // app.options('*', cors());
   // app.options('*', cors()); 
-    // app.use(cors({origin: ['http://localhost:5173', 'http://127.0.0.1:5173']}));
+  app.use(cors({origin: 'https://demoit.live'}));
   // app.all('/*', function(_req, res, next) {
   //   res.header("Access-Control-Allow-Origin", "*");
   //   res.header("Access-Control-Allow-Headers", "X-Requested-With");
