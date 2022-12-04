@@ -38,7 +38,7 @@ export const Api = ({ config, realm }: {
   // }
 
   // app.use(cors({credentials: true, origin: true, exposedHeaders: '*'}));
-    app.use(cors());
+    // app.use(cors());
   
   // app.options('*', cors());
   // app.options('*', cors()); 
