@@ -37,12 +37,12 @@ export const Api = ({ config, realm }: {
   //   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
   // }
 
-  // app.use(cors({credentials: true, origin: true, exposedHeaders: '*'}));
+  app.use(cors({credentials: true, origin: true, exposedHeaders: '*'}));
     // app.use(cors());
   
   // app.options('*', cors());
   // app.options('*', cors()); 
-  app.use(cors({origin: 'https://demoit.live'}));
+  // app.use(cors({origin: 'https://demoit.live'}));
   // app.all('/*', function(_req, res, next) {
   //   res.header("Access-Control-Allow-Origin", "*");
   //   res.header("Access-Control-Allow-Headers", "X-Requested-With");
