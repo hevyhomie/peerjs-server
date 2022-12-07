@@ -40,7 +40,11 @@ export const Api = ({ config, realm }: {
   // app.use(cors({credentials: true, origin: true, exposedHeaders: '*'}));
     // app.use(cors());
   
-  app.options('*', cors());
+    var corsOptions = {
+      origin: '*',
+      credentials: true };
+  
+    app.use(cors(corsOptions));
   // app.options('*', cors()); 
   // app.use(cors({origin: 'https://demoit.live'}));
   // app.all('/*', function(_req, res, next) {
