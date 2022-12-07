@@ -38,13 +38,13 @@ export const Api = ({ config, realm }: {
   // }
 
   // app.use(cors({credentials: true, origin: true, exposedHeaders: '*'}));
-    // app.use(cors());
+    app.use(cors());
   
-    var corsOptions = {
-      origin: '*',
-      credentials: true };
+    // var corsOptions = {
+    //   origin: '*',
+    //   credentials: true };
   
-    app.use(cors(corsOptions));
+    // app.use(cors(corsOptions));
   // app.options('*', cors()); 
   // app.use(cors({origin: 'https://demoit.live'}));
   // app.all('/*', function(_req, res, next) {
@@ -61,6 +61,7 @@ export const Api = ({ config, realm }: {
 
   app.get("/", (_, res) => {
     res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Credentials', "true");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.send(publicContent);
   });
