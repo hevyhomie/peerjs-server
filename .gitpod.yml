@@ -1,7 +1,6 @@
 ports:
   - port: 9000
     onOpen: open-browser
-    visibility: public
 tasks:
   - init: npm i -g
     command: npm run dev:start
